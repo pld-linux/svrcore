@@ -15,8 +15,8 @@ URL:		http://www.mozilla.org/directory/
 BuildRequires:	nspr-devel >= %{nspr_evr}
 BuildRequires:	nss-devel >= %{nss_evr}
 BuildRequires:	perl-base
-Requires:	nspr >= %{nspr_evr}
-Requires:	nss >= %{nss_evr}
+Requires:	nspr-devel >= %{nspr_evr}
+Requires:	nss-devel >= %{nss_evr}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
