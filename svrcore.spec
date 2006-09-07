@@ -6,7 +6,7 @@ Summary:	svrcore - development files for secure PIN handling using NSS crypto
 Summary(pl):	svrcore - pliki programistyczne do bezpiecznej obs³ugi PIN-ów przy u¿yciu NSS
 Name:		svrcore-devel
 Version:	4.0.2
-Release:	1
+Release:	2
 License:	MPL v1.1 or GPL v2+ or LGPL v2.1+
 Group:		Development/Libraries
 Source0:	ftp://ftp.mozilla.org/pub/mozilla.org/directory/svrcore/releases/%{version}/%{name}-%{version}.tar.gz
@@ -37,9 +37,15 @@ funkcje udostêpniane przez bibliotekê NSS.
 
 %build
 %{__make} -C mozilla/security/coreconf \
+%ifarch %{x8664}
+	USE_64=1 \
+%endif
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}"
 %{__make} -C mozilla/security/svrcore \
+%ifarch %{x8664}
+	USE_64=1 \
+%endif
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -I. -I/usr/include/nspr -I/usr/include/nss"
 
