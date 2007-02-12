@@ -3,7 +3,7 @@
 %define	nss_version	3.11.4
 %define	nss_evr		1:%{nss_version}
 Summary:	svrcore library for secure PIN handling using NSS crypto
-Summary(pl):	Biblioteka svrcore do bezpiecznej obs≥ugi PIN-Ûw przy uøyciu NSS
+Summary(pl.UTF-8):   Biblioteka svrcore do bezpiecznej obs≈Çugi PIN-√≥w przy u≈ºyciu NSS
 Name:		svrcore
 Version:	4.0.3.01
 Release:	1
@@ -25,16 +25,16 @@ storage e.g. in an application that must be restarted, but needs the
 PIN to unlock the private key and other crypto material, without user
 intervention. svrcore uses the facilities provided by NSS.
 
-%description -l pl
-svrcore udostÍpnia aplikacjom kilka sposobÛw obs≥ugi bezpiecznego
-przechowywania PIN-Ûw, np. w aplikacji, ktÛra musi byÊ zrestartowana,
+%description -l pl.UTF-8
+svrcore udostƒôpnia aplikacjom kilka sposob√≥w obs≈Çugi bezpiecznego
+przechowywania PIN-√≥w, np. w aplikacji, kt√≥ra musi byƒá zrestartowana,
 ale wymaga PIN-u do odblokowania klucza prywatnego i innych danych
-kryptograficznych bez interwencji uøytkownika. svrcore wykorzystuje
-funkcje udostÍpniane przez bibliotekÍ NSS.
+kryptograficznych bez interwencji u≈ºytkownika. svrcore wykorzystuje
+funkcje udostƒôpniane przez bibliotekƒô NSS.
 
 %package devel
 Summary:	Header files for svrcore library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki svrcore
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki svrcore
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	nspr-devel >= %{nspr_evr}
@@ -43,19 +43,19 @@ Requires:	nss-devel >= %{nss_evr}
 %description devel
 Header files for svrcore library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki svrcore.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki svrcore.
 
 %package static
 Summary:	Static svrcore library
-Summary(pl):	Statyczna biblioteka svrcore
+Summary(pl.UTF-8):   Statyczna biblioteka svrcore
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static svrcore library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka svrcore.
 
 %prep
