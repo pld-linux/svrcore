@@ -3,7 +3,7 @@
 %define	nss_version	3.11.4
 %define	nss_evr		1:%{nss_version}
 Summary:	svrcore library for secure PIN handling using NSS crypto
-Summary(pl.UTF-8):   Biblioteka svrcore do bezpiecznej obsługi PIN-ów przy użyciu NSS
+Summary(pl.UTF-8):	Biblioteka svrcore do bezpiecznej obsługi PIN-ów przy użyciu NSS
 Name:		svrcore
 Version:	4.0.3.01
 Release:	1
@@ -34,7 +34,7 @@ funkcje udostępniane przez bibliotekę NSS.
 
 %package devel
 Summary:	Header files for svrcore library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki svrcore
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki svrcore
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	nspr-devel >= %{nspr_evr}
@@ -48,7 +48,7 @@ Pliki nagłówkowe biblioteki svrcore.
 
 %package static
 Summary:	Static svrcore library
-Summary(pl.UTF-8):   Statyczna biblioteka svrcore
+Summary(pl.UTF-8):	Statyczna biblioteka svrcore
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
