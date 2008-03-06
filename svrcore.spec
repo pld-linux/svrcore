@@ -63,7 +63,6 @@ Statyczna biblioteka svrcore.
 
 %build
 %configure
-
 %{__make}
 
 %install
@@ -81,6 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE NEWS README
 %attr(755,root,root) %{_libdir}/libsvrcore.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libsvrcore.so.0
 
 %files devel
 %defattr(644,root,root,755)
