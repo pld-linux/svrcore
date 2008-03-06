@@ -6,7 +6,7 @@ Summary:	svrcore library for secure PIN handling using NSS crypto
 Summary(pl.UTF-8):	Biblioteka svrcore do bezpiecznej obsługi PIN-ów przy użyciu NSS
 Name:		svrcore
 Version:	4.0.4
-Release:	1
+Release:	2
 License:	MPL v1.1 or GPL v2+ or LGPL v2.1+
 Group:		Development/Libraries
 Source0:	ftp://ftp.mozilla.org/pub/mozilla.org/directory/svrcore/releases/%{version}/src/%{name}-%{version}.tar.bz2
