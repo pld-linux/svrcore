@@ -62,6 +62,7 @@ Statyczna biblioteka svrcore.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
