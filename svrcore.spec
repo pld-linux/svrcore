@@ -12,6 +12,7 @@ Group:		Development/Libraries
 Source0:	ftp://ftp.mozilla.org/pub/mozilla.org/directory/svrcore/releases/%{version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	46bcdc82624d11c1bb168cf9f15e066c
 URL:		http://www.mozilla.org/directory/
+BuildRequires:	automake
 BuildRequires:	nspr-devel >= %{nspr_evr}
 BuildRequires:	nss-devel >= %{nss_evr}
 BuildRequires:	perl-base
